@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""This module defines a class to manage file storage for hbnb clone"""
+"""This module defines a class to manage file storage for AirBnB clone"""
 import json
 
 
@@ -23,7 +23,7 @@ class FileStorage:
         """Adds new object to storage dictionary"""
         self.__objects.update(
             {obj.to_dict()['__class__'] + '.' + obj.id: obj}
-            )
+        )
 
     def save(self):
         """Saves storage dictionary to file"""
@@ -45,10 +45,10 @@ class FileStorage:
         from models.review import Review
 
         classes = {
-                    'BaseModel': BaseModel, 'User': User, 'Place': Place,
-                    'State': State, 'City': City, 'Amenity': Amenity,
-                    'Review': Review
-                  }
+            'BaseModel': BaseModel, 'User': User, 'Place': Place,
+            'State': State, 'City': City, 'Amenity': Amenity,
+            'Review': Review
+        }
         try:
             temp = {}
             with open(self.__file_path, 'r') as f:
