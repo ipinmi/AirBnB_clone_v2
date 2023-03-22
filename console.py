@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Console Module """
+""" Console Module for the AirBnB clone project """
 import cmd
 import sys
 import re
