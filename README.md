@@ -143,4 +143,4 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 
 ## AUTHORS
 - Oluwatomisin Isogun
-- Adeoye Abisola Ajarat
+- Chukuma Uche Daniel
